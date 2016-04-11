@@ -1,0 +1,14 @@
+.project1, .project2 {
+  border: 3px solid black;
+  border-radius: 20px;
+  height: 80em;
+}
+
+.project1 {
+  border: 3px solid blue;
+}
+
+
+.project2 {
+  border: 3px solid red;
+}
