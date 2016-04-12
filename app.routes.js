@@ -12,17 +12,21 @@
     // $log.info("Routers initialized");
 
     $stateProvider
-      .state('Homme', {
+      .state('homme', {
         url: '/',
         templateUrl: "/home.html"
       })
-      .state('project1', {
-        url: '/project1',
-        templateUrl: '/resources/project1/template.html'
+      .state('projects', {
+        url: '/work',
+        templateUrl: "/templates/work.html"
       })
-      .state('project2', {
-        url: '/project2',
-        templateUrl: '/resources/project2/template.html'
+      .state('projects.uno', {
+        url: '/uno',
+        templateUrl: '/templates/uno.html'
+      })
+      .state('projects.dos', {
+        url: '/dos',
+        templateUrl: '/templates/dos.html'
       })
 
     $urlRouterProvider.otherwise('/');
