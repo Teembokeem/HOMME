@@ -15,10 +15,9 @@
 </head>
 <body>
   <nav>
-    <main class="main-head">T | M K | M </main>
-    <button class="sub" type="text" ui-sref="Homme">Homme</button>
-    <button class="sub" type="text" ui-sref="project1">P R O J E C T 1</button>
-    <button class="sub" type="text" ui-sref="project2">P R O J E C T 2</button>
+    <main class="main-head">T | M K | M</main>
+    <button ng-show="!$state.is('homme')" class="sub" type="text" ui-sref="homme">Homme</button>
+    <button ng-show="!$state.is('homme')" class="sub" type="text" ui-sref="work">Work work work...</button>
   </nav>
 
   <main ui-view></main>
@@ -26,7 +25,7 @@
 
 
 
-  <script src="app.module.js"></script>
-  <script src="app.routes.js"></script>
+  <script src="/js/app.module.js"></script>
+  <script src="/js/app.routes.js"></script>
 </body>
 </html>

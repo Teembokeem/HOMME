@@ -14,19 +14,19 @@
     $stateProvider
       .state('homme', {
         url: '/',
-        templateUrl: "/home.html"
+        templateUrl: "/js/app/templates/home.html"
       })
-      .state('projects', {
+      .state('work', {
         url: '/work',
-        templateUrl: "/templates/work.html"
+        templateUrl: "/js/app/templates/work.html"
       })
-      .state('projects.uno', {
+      .state('work.uno', {
         url: '/uno',
-        templateUrl: '/templates/uno.html'
+        templateUrl: '/js/app/templates/uno.html'
       })
-      .state('projects.dos', {
+      .state('work.dos', {
         url: '/dos',
-        templateUrl: '/templates/dos.html'
+        templateUrl: '/js/app/templates/dos.html'
       })
 
     $urlRouterProvider.otherwise('/');
