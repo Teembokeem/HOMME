@@ -10,22 +10,27 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script  src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="/js/vendor/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script src="/js/vendor/angular-animate.min.js"></script>
+  <script src="/js/vendor/two.js"></script>
 </head>
-<body>
+<body ng-controller="FxController as vm">
   <nav>
     <main class="main-head">T | M K | M</main>
     <button ng-show="!$state.is('homme')" class="sub" type="text" ui-sref="homme">Homme</button>
     <button ng-show="!$state.is('homme')" class="sub" type="text" ui-sref="work">Work work work...</button>
   </nav>
 
-  <main ui-view></main>
+  <main ui-view>
+  </main>
+  <div id="draw-test"></div>
 
 
 
 
   <script src="/js/app.module.js"></script>
   <script src="/js/app.routes.js"></script>
+  <script src="/js/fx.controller.js"></script>
 </body>
 </html>

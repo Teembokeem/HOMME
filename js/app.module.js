@@ -1,6 +1,6 @@
 (function() {
   'use strict'
 
-  angular.module('Homme', ['ui.router']);
+  angular.module('Homme', ['ui.router', 'ngAnimate']);
 
 })();

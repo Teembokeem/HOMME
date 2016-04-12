@@ -34,3 +34,31 @@ body {
 .project2 {
   border: 3px solid red;
 }
+
+[ui-view].ng-enter {
+  transition: left 1000ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1000ms linear;
+  left: 150px;
+  position: absolute;
+  opacity: 0;
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  position: relative;
+  left: 0px;
+}
+
+[ui-view] {
+  z-index: 50;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+
+
