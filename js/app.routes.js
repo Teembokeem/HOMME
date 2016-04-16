@@ -28,6 +28,15 @@
         url: '/dos',
         templateUrl: '/js/app/templates/dos.html'
       })
+      .state('work.tres', {
+        url: '/tres',
+        templateUrl: '/js/app/templates/tres.html'
+      })
+      .state('work.quattro', {
+        url: '/quattro',
+        templateUrl: '/js/app/templates/quattro.html'
+      })
+
 
     $urlRouterProvider.otherwise('/');
   }
