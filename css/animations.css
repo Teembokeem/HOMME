@@ -1,40 +1,71 @@
+/*STATE-CHANGE ANIMATIONS*/
 #masterUI.ng-enter {
-  transition: left 1000ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1000ms linear;
-  left: 150px;
-  position: absolute;
-  opacity: 0;
+  transition: left 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
+              opacity 1000ms linear;
+  left:       150px;
+  position:   absolute;
+  opacity:    0;
 }
 
 #masterUI.ng-enter-active {
-  opacity: 1;
+  opacity:  1;
   position: relative;
-  left: 0px;
+  left:     0px;
 }
 
 #masterUI {
   z-index: 50;
 }
 
+
+/*PROJECT NESTED STATE ANIMATIONS*/
 #workUI.ng-enter {
-  transition: right 1000ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1000ms linear;
-  right: 150px;
-  position: absolute;
-  opacity: 0;
+  transition: right 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
+              opacity 1000ms linear;
+  right:      150px;
+  position:   absolute;
+  opacity:    0;
 }
 
 #workUI.ng-enter-active {
-  opacity: 1;
+  opacity:  1;
   position: relative;
-  right: 0px;
+  right:    0px;
 }
 
-.project-uno,
-.project-dos, .project-tres, .project-quattro {
 
+/*HOVER ANIMATIONS*/
+.project-uno,
+.project-dos,
+.project-tres,
+.project-quattro {
+  border-bottom: 3px solid transparent;
+  transition:    all 500ms linear;
 }
 
 .project-uno:hover,
-.project-dos:hover, .project-tres:hover, .project-quattro:hover {
+.project-dos:hover,
+.project-tres:hover,
+.project-quattro:hover {
+  transition:    all 500ms linear;
   border-bottom: 3px solid black;
-  opacity: 1;
+  opacity:       1;
+}
+
+
+
+.passive {
+  transition: right 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
+              opacity 1000ms linear;
+  right:      0;
+  position:   absolute;
+  opacity:    0;
+}
+
+.active {
+  transition: right 1000ms cubic-bezier(0.165, 0.84, 0.44, 1),
+              opacity 1000ms linear;
+  opacity:  1;
+  position: relative;
+  right:    150px;
 }
