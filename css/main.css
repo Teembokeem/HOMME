@@ -20,36 +20,6 @@ body {
   font-family: 'Crimson Text', serif;
 }
 
-#masterUI.ng-enter {
-  transition: left 1000ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1000ms linear;
-  left: 150px;
-  position: absolute;
-  opacity: 0;
-}
-
-#masterUI.ng-enter-active {
-  opacity: 1;
-  position: relative;
-  left: 0px;
-}
-
-#masterUI {
-  z-index: 50;
-}
-
-#workUI.ng-enter {
-  transition: right 1000ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1000ms linear;
-  right: 150px;
-  position: absolute;
-  opacity: 0;
-}
-
-#workUI.ng-enter-active {
-  opacity: 1;
-  position: relative;
-  right: 0px;
-}
-
 svg {
   position: fixed;
   top: 0;
@@ -97,13 +67,3 @@ svg {
   font-size: 10em;
 }
 
-.project-uno,
-.project-dos, .project-tres, .project-quattro {
-
-}
-
-.project-uno:hover,
-.project-dos:hover, .project-tres:hover, .project-quattro:hover {
-  border-bottom: 3px solid black;
-  opacity: 1;
-}
