@@ -2,10 +2,10 @@
   'use strict'
 
   angular
-    .module("Momentum")
+    .module("Homme")
     .controller("WorkController", WorkController);
 
-  WorkController.$inject("$log", "$state");
+  WorkController.$inject = ["$log", "$state"];
 
   function WorkController($log, $state) {
     $log.debug("Work Controller loaded");
