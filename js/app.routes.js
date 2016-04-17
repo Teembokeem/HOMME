@@ -18,7 +18,9 @@
       })
       .state('work', {
         url: '/work',
-        templateUrl: "/js/app/templates/work.html"
+        templateUrl: "/js/app/templates/work.html",
+        controller: "WorkController",
+        controllerAs: "vm"
       })
       .state('work.uno', {
         url: '/uno',
