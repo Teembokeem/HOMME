@@ -20,13 +20,13 @@
   <nav>
     <main class="main-head">T | M K | M</main>
     <button ng-show="!$state.is('homme')" class="sub" type="text" ui-sref="homme">Homme</button>
-    <button ng-show="!$state.is('homme')" class="sub" type="text" ui-sref="work">Work work work...</button>
   </nav>
 
   <main id="masterUI" ui-view>
   </main>
   <div id="draw-test"></div>
 
+    <button ng-show="$state.is('homme')" class="sub" type="text" ui-sref="work">></button>
 
 
 
