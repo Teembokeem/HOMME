@@ -61,10 +61,49 @@ svg {
 .container {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+  max-width: 100%;
 }
 
 .project-image {
   border-radius: 50px;
 }
 
+.project-titles {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
 
+.project-title {
+  display: flex;
+  align-items: baseline;
+  padding: 0 5em;
+}
+
+.fig {
+  font-size: 2em;
+  font-style: italic;
+}
+
+.zero {
+  font-size: 4em;
+  align-self: flex-start;
+  padding-top: 1em;
+}
+
+.project-num {
+  font-size: 10em;
+}
+
+.project-uno,
+.project-dos, .project-tres, .project-quattro {
+
+}
+
+.project-uno:hover,
+.project-dos:hover, .project-tres:hover, .project-quattro:hover {
+  border-bottom: 3px solid black;
+  opacity: 1;
+}

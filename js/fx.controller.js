@@ -36,9 +36,10 @@
         var t = (1 - group.scale) * 0.125;
         group.scale += t;
         group.rotation += t * 4 * Math.PI;
-      }).play();  // Finally, start the animation loop
+      })
+      // .play();  // Finally, start the animation loop
       if (document.querySelectorAll('svg').length !== 0) {
-        two.update();
+        // two.update();
       }
     }
     })
