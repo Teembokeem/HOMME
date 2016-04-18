@@ -21,13 +21,13 @@
     <main class="main-head">T | M K | M</main>
     <button class="sub" type="text" ui-sref="homme">Homme</button>
   </nav>
+  <button ng-show="!(vm.$state.is('work')) && !(vm.$state.is('homme'))" class="sub" type="text" ui-sref="work"><</button>
 
   <main id="masterUI" ui-view>
   </main>
   <div id="draw-test"></div>
 
   <button ng-show="vm.$state.is('homme')" class="sub" type="text" ui-sref="work">></button>
-  <button ng-show="!(vm.$state.is('work')) && !(vm.$state.is('homme'))" class="sub" type="text" ui-sref="work"><</button>
 
 
 
