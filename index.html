@@ -23,17 +23,35 @@
       <p class="main-head">T|M K|M</p>
     </main>
   </nav>
-  <button ng-show="!(vm.$state.is('work')) && !(vm.$state.is('homme'))" class="sub" type="text" ui-sref="work"><</button>
   <img class="paintslash blue" src="/images/blue.png" alt="">
   <img class="paintslash red" src="/images/red.png" alt="">
   <img class="paintslash green" src="/images/green.png" alt="">
   <main id="masterUI" ui-view>
   </main>
 
-  <button ng-show="!(vm.$state.is('homme'))" class="sub" type="text" ui-sref="homme">Homme</button>
-  <button ng-show="vm.$state.is('homme')" class="sub button-work" type="text" ui-sref="work">></button>
+  <div class="container navigation-container">
+    <button ng-show="!(vm.$state.is('homme'))" class="sub" type="text" ui-sref="homme">Homme</button>
+    <button ng-show="!(vm.$state.is('work')) && !(vm.$state.is('homme'))" class="sub" type="text" ui-sref="work"><</button>
+    <button ng-show="vm.$state.is('homme')" class="sub button-work" type="text" ui-sref="work">></button>
+  </div>
 
 
+  <footer class="container icon-container">
+    <div class="row">
+      <a class="icon-href" href="https://www.github.com/teembokeem">
+        <img class="icons" src="/images/ghub.png" alt="">
+      </a>
+      <a class="icon-href" href="https://www.linkedin.com/in/timmyungkim">
+        <img class="icons" src="/images/linkedin.png" alt="">
+      </a>
+      <a class="icon-href" href="https://profiles.generalassemb.ly/tim-kim">
+        <img class="icons" src="/images/ga.png" alt="">
+      </a>
+      <a class="icon-href" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=myungtkim@gmail.com">
+        <img class="icons" src="/images/gmail.png" alt="">
+      </a>
+    </footer>
+  </div>
 
   <script src="/js/app.module.js"></script>
   <script src="/js/app.routes.js"></script>
