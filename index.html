@@ -18,8 +18,10 @@
 </head>
 <body ng-controller="MainController as vm">
   <nav>
-    <main class="main-head">T | M K | M</main>
-    <button class="sub" type="text" ui-sref="homme">Homme</button>
+    <main>
+      <img class="logo" src="/images/logo.png" alt="">
+      <p class="main-head">T|M K|M</p>
+    </main>
   </nav>
   <button ng-show="!(vm.$state.is('work')) && !(vm.$state.is('homme'))" class="sub" type="text" ui-sref="work"><</button>
   <img class="paintslash blue" src="/images/blue.png" alt="">
@@ -27,9 +29,9 @@
   <img class="paintslash green" src="/images/green.png" alt="">
   <main id="masterUI" ui-view>
   </main>
-  <div id="draw-test"></div>
 
-  <button ng-show="vm.$state.is('homme')" class="sub" type="text" ui-sref="work">></button>
+  <button ng-show="!(vm.$state.is('homme'))" class="sub" type="text" ui-sref="homme">Homme</button>
+  <button ng-show="vm.$state.is('homme')" class="sub button-work" type="text" ui-sref="work">></button>
 
 
 
