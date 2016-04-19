@@ -1,15 +1,15 @@
 
 
-<div class="container projects">
-  <div class="row project-titles">
-    <div ng-show="vm.$state.is('work') || vm.$state.is('work.uno')" ui-sref="work.uno" class="project-title project-uno"><p class="fig sub">Fig.</p><p class="zero">o</p><p class="project-num sub">1</p></div>
-    <div ng-show="vm.$state.is('work') || vm.$state.is('work.dos')" ui-sref="work.dos" class="project-title project-dos"><p class="fig sub">Fig.</p><p class="zero">o</p><p class="project-num sub">2</p></div>
-    <div ng-show="vm.$state.is('work') || vm.$state.is('work.tres')" ui-sref="work.tres" class="project-title project-tres"><p class="fig sub">Fig.</p><p class="zero">o</p><p class="project-num sub">3</p></div>
-    <div ng-show="vm.$state.is('work') || vm.$state.is('work.quattro')" ui-sref="work.quattro" class="project-title project-quattro"><p class="fig sub">Fig.</p><p class="zero">o</p><p class="project-num sub">4</p></div>
-  </div>
-</div>
 
 <main id="workUI" ui-view>
+  <div class="container projects">
+    <div class="row project-titles">
+      <div ng-class="vm.trasitionimations('work.uno');" ng-show="vm.$state.is('work') || vm.$state.is('work.uno')" ui-sref="work.uno" class="project-title project-uno"><p class="fig sub">Fig.</p><p class="zero">o</p><p class="project-num sub">1</p></div>
+      <div ng-class="vm.trasitionimations('work.dos');" ng-show="vm.$state.is('work') || vm.$state.is('work.dos')" ui-sref="work.dos" class="project-title project-dos"><p class="fig sub">Fig.</p><p class="zero">o</p><p class="project-num sub">2</p></div>
+      <div ng-class="vm.trasitionimations('work.tres');" ng-show="vm.$state.is('work') || vm.$state.is('work.tres')" ui-sref="work.tres" class="project-title project-tres"><p class="fig sub">Fig.</p><p class="zero">o</p><p class="project-num sub">3</p></div>
+      <div ng-class="vm.trasitionimations('work.quattro');" ng-show="vm.$state.is('work') || vm.$state.is('work.quattro')" ui-sref="work.quattro" class="project-title project-quattro"><p class="fig sub">Fig.</p><p class="zero">o</p><p class="project-num sub">4</p></div>
+    </div>
+  </div>
   <div class="sub-head text">work.</div>
 </main>
 
