@@ -20,7 +20,45 @@
   <nav>
     <main>
       <img class="logo" src="/images/logo.png" alt="">
-      <p class="main-head">T|M K|M</p>
+      <p ng-show="vm.$state.is('homme')" class="main-head">T|M K|M</p>
+      <p ng-show="vm.$state.is('work')" class="sub-head text">work.</p>
+      <p ng-show="vm.$state.is('work.uno')" class="project-head text">
+        Gauntlet: The Ocho
+        <a class="icon-href" href="http://teembokeem.github.io/Gauntlet-The-Ocho/">
+          <img class="project-icons" src="/images/sites.png" alt="">
+        </a>
+        <a class="icon-href" href="https://github.com/Teembokeem/Gauntlet-The-Ocho">
+          <img class="project-icons" src="/images/githubs.png" alt="">
+        </a>
+      </p>
+
+      <p ng-show="vm.$state.is('work.dos')" class="project-head text">
+        Brew Origens LA
+        <a class="icon-href" href="https://agile-river-91261.herokuapp.com/">
+          <img class="project-icons" src="/images/sites.png" alt="">
+        </a>
+        <a class="icon-href" href="https://github.com/Teembokeem/Brew-Origens-LA">
+          <img class="project-icons" src="/images/githubs.png" alt="">
+        </a>
+      </p>
+      <p ng-show="vm.$state.is('work.tres')" class="project-head text">
+        VURS
+        <a class="icon-href" href="https://mysterious-garden-27618.herokuapp.com/">
+          <img class="project-icons" src="/images/sites.png" alt="">
+        </a>
+        <a class="icon-href" href="https://github.com/Teembokeem/VURS">
+          <img class="project-icons" src="/images/githubs.png" alt="">
+        </a>
+      </p>
+      <p ng-show="vm.$state.is('work.quattro')" class="project-head text">
+        Momentum
+        <a class="icon-href" href="https://fast-badlands-66459.herokuapp.com/#/">
+          <img class="project-icons" src="/images/sites.png" alt="">
+        </a>
+        <a class="icon-href" href="https://github.com/Teembokeem/Momentum">
+          <img class="project-icons" src="/images/githubs.png" alt="">
+        </a>
+      </p>
     </main>
   </nav>
   <img class="paintslash blue" src="/images/blue.png" alt="">

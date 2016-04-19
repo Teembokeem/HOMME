@@ -48,6 +48,10 @@ svg {
   margin: 0 auto;
 }
 
+.project-icons {
+  height: 1em;
+}
+
 .project-image {
   border-radius: 50px;
 }
