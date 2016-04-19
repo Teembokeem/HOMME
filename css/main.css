@@ -73,3 +73,24 @@ svg {
   font-size: 10em;
 }
 
+/*PAINTSLASHES*/
+.paintslash {
+  height: 500px;
+  position: fixed;
+  z-index: -1;
+}
+
+.blue {
+  top: 8em;
+  left: 20em;
+}
+
+.red {
+  top: 30em;
+  left: 20em;
+}
+
+.green {
+  top: 20em;
+  left: 65em;
+}
